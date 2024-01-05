@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>SriEshwar Conference</title>
+    <style type="text/css">
+        label{
+            width: 100px;
+            display:inline-table;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center" style="color: rgb(0, 55, 235);"> SriEshwar Tech. Inc.</h1>
+    <h2 align="center">SriEshwar Conference Registration Form.</h2>
+    <form>
+        <div>
+          <label for="name">NAME</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name here" required>
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+        </div>
+        <div>
+            <label for="countrycode">Countrycode</label>
+            <input type="text" name="countrycode" id="countrycode" placeholder="Enter Countrycode" minlength="7"            maxlength="7" value="+91" required>
+        </div>
+        <div>
+            <label for="phonenumber">phonenumber</label>
+            <input type="number" name="phonenumber" id="phonenumber" placeholder="Enter your phonenumber" minlength="10" maxlength="10" required>
+        </div>
+        <div>
+            <label for="Company">Company name</label>
+            <input type="text" name="Company" id="Company" placeholder="Enter your Company" required> 
+        </div>
+        <div>
+            <label for="job">Job title</label>
+            <input type="text" name="job" id="job" required>
+        </div>
+        <dl>
+            <dt for="gender">Gender</dt>
+            <dd>
+                <div>
+                    <label for="gender" >Male</label>
+                    <input type="radio" name="gender" id="gender" >
+                </div>
+                <div>
+                    <label for="gender">Female</label>
+                    <input type="radio" name="gender" id="gender" required>
+                </div>
+            </dd>
+        </dl>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age"id="age"  placeholder="Enter your age" required>
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" placeholder="Enter your country" required>
+        </div>
+        <div>
+            <label for="city">City</label>
+            <input type="text" name="city" id="city"  placeholder="Enter your  city" required>
+        </div>
+        <h1 style="color: rgb(0, 68, 255);">food</h1>
+       <dl>
+         <dt> <h2><b>veg</b></h2></dt>
+            <dd>
+                <div>
+                    <label>Tomato rice</label>
+                    <input type="checkbox" > 
+                </div>
+                <div>
+                    <label>dosai</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <label>vadai</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <label>noodles</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <label>pulav</label>
+                    <input type="checkbox">
+                </div>
+                
+            </dd>
+            <dt> <h2><b>Non-veg </b></h2></dt>
+            <dd>
+                <div>
+                     <label>Chicken Biriyani</label>
+                     <input type="checkbox">
+                </div>
+                <div>
+                    <label>Chicken Fry</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <label>Egg Biriyani</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <label>fish fry</label>
+                    <input type="checkbox">
+                </div>
+            </dd>
+
+        
+       </dl>
+       <div>
+           <label >T-SHIRT</label>
+          <select>
+            <option selected disabled>size</option>
+            <optgroup>size</optgroup>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+
+          </select>
+       </div>
+       <div>
+        <label for="color">Preffered T-Shirt s colour</label>
+        <input type="color" name="color" id="color" >
+       </div>
+       <div>
+        <label >Session  Prefferenses</label>
+        <select >
+            <option  selected disabled>Sessions</option>
+            <option>Session1</option>
+            <option>Session2</option>
+            <option>Session3</option>
+        </select>
+       </div>
+       <div>
+        <label >Workshop  Selecetion</label>
+        <select  required   >
+            <option  selected disabled>Workshops</option>
+            <option>Ideathon BY SECE</option>
+            <option>psg HACHKATHON</option>
+            <option>gct HACHKATHON</option>
+        </select>
+       </div>
+       <div>
+        <label >Workshop date</label>
+        <select>
+            <option selected disabled>date</option>
+            <option> 21-05-2023 </option>
+            <option> 22-05-2023</option>
+            <option> 23-05-2023</option>
+        </select>
+       </div>
+       
+        <h1>Will you bring guest</h1>
+        <label for="y">yes</label>
+        <input type="radio" name="y" id="y">
+       
+       
+        <label for="y">no</label>
+        <input type="radio" name="y" id="y">
+       <br>
+       <div>
+           <label for="nm">enter your guest's name</label>
+           <textarea name="nm" id="nm" placeholder="Enter your guest's name"> </textarea>
+       </div>
+       <dl><h3>if yes choose who will come </h3>
+        <dt>Guest's Prefferenses</dt>
+        <dd>
+            
+             <label for="guest">Father</label>
+             <input type="radio" name="guest" id="guest">
+        </dd>
+        <dd>
+            
+             <label for="guest">Mother</label>
+             <input type="radio" name="guest" id="guest">
+        </dd>
+        <dd>
+             <label for="guest">Brother</label>
+             <input type="radio" name="guest" id="guest">
+        </dd>
+        <dd>
+             <label for="guest">sister</label>
+             <input type="radio" name="guest" id="guest" required>
+        </dd>
+    </dl>
+    <h3>Preffered payment method</h3>
+       <div>
+            <label for="pay">credit/debit card</label>
+            <input type="number" name="pay" id="pay" minlength="16" maxlength="16" required >
+    </div>
+       <div>
+            <label for="d">card expiry date</label>
+            <input type="datetime" name="d" id="d">
+       </div>
+       <div>
+            <label for="c">Card CVV</label>
+            <input  type="number" name="c" id="c" minlength="3" maxlength="3" required>
+       </div>
+       <div>
+            <label for="bill">Billing area</label>
+            <textarea name="bill" id="bill" required ></textarea>
+       </div>
+       <h3>HOW DID YOU HEAR ABOUT US</h3>
+            <label for="h">ads</label>
+            <input type="checkbox" name="h"n id="h">
+       <div>
+            <label for="h">industry</label>
+            <input type="checkbox" name="h" id="h">
+       </div>
+       <div>
+            <label for="h">friends</label>
+            <input type="checkbox" name="h" id="h" required>
+       </div>
+       <div>
+            <label for="Upload" ><b>Upload your photo for id card</b></label>
+            <input type="file"  name="Upload" id="Upload" accept=".png" required>
+       </div>
+       <div>
+            <label for="prof"> enter your profile</label>
+            <input type="file" name="prof" id="prof" accept=".pdf" required>
+       </div>
+       <div>
+            <label  for="com"><b>Comments are welcomed</b></label>
+            <textarea name="com" id="com" required></textarea>
+       </div>
+            <button type="submit" >submit</button>
+        <di>
+            <button type="reset">reset</button>
+        </di>
+        <div>
+        <dl><h3>Team leader:KAVIPRABHA S T </h3>
+        </dl>
+
+    </form>
+    <h3 align="center"style="color:pink;">by</h3>
+    <h3 align="center"style="color:blue;">NISA SOWBIKA K S</h3>
+    <h3 align="center"style="color:blue;">MIDHUNA A</h3>
+     <h3 align="center"style="color:blue;">KAVIPRABHA S T</h3>
+     <h3 align="center"style="color:blue;">KAVI SHANTHI G</h3>
+</body>
